@@ -10,7 +10,6 @@ const proxy = http.createServer( (req, res) => {
   res.end('okay');
 });
 proxy.on('connect', (req, cltSocket, head) => {
-
   console.log('connected ....')
 
   // connect to an origin server

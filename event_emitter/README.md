@@ -1,4 +1,4 @@
-#EVENT EMITTER
+# EVENT EMITTER
  - *__Defined simply__* : event-driven programming is application flow control that is determined by events or changes in state. 
  - `libuv`, Node.js dependent library, the magical library that handles the queueing and processing of asynchronous events.
 
