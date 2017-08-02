@@ -33,6 +33,19 @@
 An Agent is responsible for managing connection persistence and reuse for HTTP clients.
 
 
+## Remark
+#### Response object is a WritableStrea
+Writing a response body out to the client is just a matter of using the usual stream methods.
+
+```js
+response.write('<html>');
+response.write('<body>');
+response.write('<h1>Hello, World!</h1>');
+response.write('</body>');
+response.write('</html>');
+response.end();
+```
+
 
 Reference: 
 [https://nodejs.org/api/http.html#http_http](https://nodejs.org/api/http.html#http_http)
